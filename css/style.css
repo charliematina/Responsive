@@ -1,0 +1,226 @@
+* {
+	padding: 0px;
+	margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    color: white;
+}
+
+body{
+	background-color: #566573;
+}
+a{
+	text-decoration: none;
+	color: white;
+}
+
+a:hover{
+	opacity: 0.5;
+}
+
+ul{
+	list-style-type: none;
+}
+
+/*Makes the content in the columns float left*/
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+    border: none;
+}
+
+/*This clears the float left*/
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.right{
+	float: right;
+}
+
+.left{
+	float: left;
+}
+
+hr{
+	border: 0.010em solid white;
+}
+
+nav{
+	text-align: center;
+	background-color: #17202A;
+	color: white;
+	position: fixed;
+	width: 100%;
+	padding: 30px;
+	z-index: 2;
+}
+
+.nav-menu ul{
+	list-style-type: none;
+	letter-spacing: 3px;
+	font-size: 20px;
+}
+
+nav img{
+	max-width: 35px;
+}
+
+.nav-menu{
+	display: none;
+}
+
+.nav-menu li{
+	margin-left: 50px;
+	float: left;
+	font-size: 20px;
+	letter-spacing: 3px;	
+}
+
+.nav-logo{
+	font-size: 20px;
+	letter-spacing: 2px;
+}
+
+.hamburger-menu{
+	display: block;
+	font-size: 30px;
+}
+
+.hamburger-menu:hover{
+	opacity: 0.5;
+}
+
+.dropdown-menu{
+	display: none;
+	position: fixed;
+	background-color: #17202A;
+	opacity: 0.95;
+	margin-top: 80px;
+	width: 100%;
+	letter-spacing: 4px;
+	line-height: 30px;
+	text-align: center;
+	z-index: 1;
+}
+
+.dropdown-menu li{
+	background-color: none;
+	margin-bottom: 5px;
+	padding: 5px 0px 5px 0px;
+}
+
+.dropdown-menu li:hover{
+	opacity: 0.5;
+}
+
+#main-content-container{
+	padding-top: 90px;
+	background-color: #	;
+}
+
+.menu ul {
+	list-style-type: none;
+}
+
+.menu li {
+	letter-spacing: 2px;
+	color: white;
+	background-color: #17202A;
+	margin-bottom: 10px;
+	padding: 10px;
+}
+
+.menu li:hover{
+	opacity: 0.8; 
+}
+
+.content{
+	background-color: none;
+	font-size: 15px;
+	text-align: center;
+}
+
+.banner{
+	background-color: #283747;
+	text-align: center;
+	padding: 50px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+.jumbo{
+}
+
+footer{
+	background-color: #17202A;
+	color: white;
+	float: left;
+	width: 100%;
+	text-align: center;
+	padding: 15px;
+}
+
+.footer-links{
+	display: inline-block;
+	padding: 15px;
+}
+
+footer ul{
+}
+
+footer li{
+	letter-spacing: 2px;
+	float: left;
+	padding: 15px;
+	font-size: 12px;
+}
+
+/*Media Queries Below*/
+
+
+/*For Mobile*/
+[class*="col-"] {
+		width: 100%;
+}
+
+
+@media only screen and (min-width: 500px) {
+    /* For tablets: */
+    /*Columns for responsive design*/
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}	
+}
+
+@media only screen and (min-width: 768px) {
+	/*For Desktop*/
+	/*Columns for responsive design*/
+	.col-1 {width: 8.33%;}
+	.col-2 {width: 16.66%;}
+	.col-3 {width: 25%;}
+	.col-4 {width: 33.33%;}
+	.col-5 {width: 41.66%;}
+	.col-6 {width: 50%;}
+	.col-7 {width: 58.33%;}
+	.col-8 {width: 66.66%;}
+	.col-9 {width: 75%;}
+	.col-10 {width: 83.33%;}
+	.col-11 {width: 91.66%;}
+	.col-12 {width: 100%;}
+	.nav-menu {display: block;}
+	.dropdown-menu {display: none !important;}
+	.hamburger-menu {display: none;}
+	footer li{font-size: 18px;}
+}
